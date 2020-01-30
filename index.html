@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+       <title>Herencia genética</title>
+       <meta charset="utf-8">
+       <!--viewport // "user-scalable=no" prevents zooming-->
+       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+ 
+       <!--AFTER LAST DEBUG DELETE THIS META-website reloaded from the web server with every page view. This leads to longer loading times, but on the other hand, it can be very useful, for example, if a web page's content is constantly being updated.-->
+           <meta http-equiv="cache-control" content="no-cache"/>
+ 
+       <!--meta to make the status bar translucent in the phone / full-screen browsing-->
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ 
+       <!--Adds An iPhone And iPad Icon for Your Website-->
+       <link rel="apple-touch-icon" href="style/images/logo.png" />
+       <!--Adds An Android Icon for Your Website-->
+       <link rel="apple-touch-icon-precomposed" href="style/images/logo.png" />
+ 
+       <!-- Add to homescreen for Chrome on Android -->
+       <meta name="mobile-web-app-capable" content="yes">
+       <meta name="application-name" content="Herencia genética">
+       <meta name="theme-color" content="#673ab7">
+       <link rel="icon" type="image/png" href="style/images/logo.png" sizes="16x16 32x32" />
+ 
+       <!-- Add to homescreen for Safari on iOS -->
+       <meta name="apple-mobile-web-app-title" content="Herencia genética">
+       <meta name="apple-mobile-web-app-status-bar-style" content="#673ab7">
+ 
+       <!--w3.css stylesheet and color libraries-->
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+
+       <!--font awesome v5.8.1 (icons)-->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <!-- fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+       
+
+       <!--my css- created in another file named main.css-->
+       <link href="style/main.css" rel="stylesheet" type="text/css" />
+
+        <!-- font awesome clases -->
+        <link href="style/font-awesome.css" rel="stylesheet" type="text/css" />
+
+        <!-- sweet alert -->
+        <link rel="stylesheet" href="sweetalert2.min.css">
+
+ 
+   </head>
+
+    <body>
+        <div class="w3-container w3-center w3-coffee w3-mobile" id="app"> <!--1st div-->
+            <div id="inicio" class="w3-text-indigo">
+                <h3 class="w3-margin"><b>¿Es más probable que tu hijo/a tenga ojos claros u oscuros?</b> </h3>
+                <img class="w3-image w3-margin w3-padding" style="width: 60%;" src="style/images/logo.png" alt="Herencia genética"> <br> <br>
+                <button class="w3-btn w3-border-deep-purple w3-deep-purple w3-bottombar w3-leftbar w3-rightbar w3-topbar w3-round-xlarge w3-margin w3-hover-opacity w3-xlarge" onclick="w3.show('#preguntas') ; w3.hide('#inicio');">¡Comencemos!</button>
+            </div>
+
+                <div id="preguntas" style="display:none" class="w3-large">
+                    <form action="">
+                        <h3 class="w3-margin w3-text-indigo"><strong>Tonalidad de ojos...</strong></h3>
+
+                        <div class="w3-margin" id="q0">
+                            
+                            <span class="w3-large"><b>Míos:</b></span> <br>
+                            
+                            <label class="w3-margin">
+                            <input class="" type="radio" name="ojosMios" value="claros" required>
+                            Claros</label>
+                            
+                            <label>
+                            <input class="" type="radio" name="ojosMios" value="oscuros">
+                            Oscuros</label> <br> <br>
+
+                        </div>
+
+                        <div class="w3-margin" id="q1">
+
+                            <span class="w3-large"><b>De mi mamá:</b></span> <br>
+                            
+                            <label class="w3-margin">
+                            <input type="radio" name="ojosMamaMia" value="claros" required>
+                            Claros</label>
+                            
+                            <label>
+                            <input class="" type="radio" name="ojosMamaMia" value="oscuros">
+                            Oscuros</label> <br> <br>
+
+                        </div>
+
+                        <div class="w3-margin" id="q2">
+
+                            <span class="w3-large"><b>De mi papá:</b></span> <br>
+
+                            <label class="w3-margin">
+                            <input type="radio" name="ojosPapaMio" value="claros" required>
+                            Claros</label> 
+
+                            <label>
+                            <input class="" type="radio" name="ojosPapaMio" value="oscuros">
+                            Oscuros</label> <br> <br>
+
+                        </div>
+
+                        <div class="w3-margin" id="q3">
+                            <span class="w3-large"><b>De mi pareja:</b></span> <br>
+
+                            <label class="w3-margin">
+                            <input type="radio" name="ojosPareja" value="claros" required>
+                            Claros</label> 
+                            
+                            <label>
+                            <input class="" type="radio" name="ojosPareja" value="oscuros">
+                            Oscuros</label> <br> <br>
+
+                        </div>
+
+                        <div class="w3-margin" id="q4">
+                            <span class="w3-large"><b>De la madre de mi pareja:</b></span> <br>
+
+                            <label class="w3-margin">
+                            <input  type="radio" name="ojosMadrePareja" value="claros" required>
+                            Claros</label> 
+                            
+                            <label>
+                            <input class="" type="radio" name="ojosMadrePareja" value="oscuros">
+                            Oscuros</label> <br> <br>
+
+                        </div>
+
+                        <div class="w3-margin" id="q5">
+                            
+                            <span class="w3-large"><b>Del padre de mi pareja:</b></span> <br>
+
+                            <label class="w3-margin">
+                            <input type="radio" name="ojosPadrePareja" value="claros" required>
+                            Claros</label>
+                            
+                            <label>
+                            <input class="" type="radio" name="ojosPadrePareja" value="oscuros">
+                            Oscuros</label> <br>
+
+                        </div>
+                    </form><br>
+                    
+                <button class=" w3-btn w3-border-deep-purple w3-deep-purple w3-bottombar w3-leftbar w3-rightbar w3-topbar w3-round-xlarge w3-hover-opacity w3-xlarge" onclick="mostrarResultado()"> Ver resultado</button>
+   
+                </div>
+                
+
+                <div id="resultado" class="w3-margin w3-padding"></div>
+
+
+
+
+
+
+
+        </div> <!--last div -->
+ 
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAgFqQV3s5yPbNxqVkaxR3qmMijaciQH0g",
+        authDomain: "herencia-genetica.firebaseapp.com",
+        databaseURL: "https://herencia-genetica.firebaseio.com",
+        projectId: "herencia-genetica",
+        storageBucket: "herencia-genetica.appspot.com",
+        messagingSenderId: "1029141583255",
+        appId: "1:1029141583255:web:5a324ea416217eb0efe0d2",
+        measurementId: "G-39E3WZQ8VT"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
+
+
+    <!-- Vue.js development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+     <!--sweet alert-->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     <script src="sweetalert2.min.js"></script>
+     
+
+    <!--w3.js script-->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!--main.js script-->
+    <script src="script/main.js"></script>
+   
+ 
+
+
+
+    </body>
+</html>
