@@ -1,8 +1,13 @@
 # Herencia Genética
 
-### Aplicación para determinar la probabilidad de que tu hijo/a tenga los ojos claros u oscuros.
+### Aplicación Web Mobile Responsive para determinar la probabilidad de que tu hijo/a tenga los ojos claros u oscuros.
 
-Está hecha con html, css, javascript, framework w3.css y hosteada en Firebase.
+#### Responsive Mobile Web App to determine the probability that your child has light or dark eyes. (The app is in Spanish)
 
-link: herencia-genetica.firebaseapp.com
+### Tecnologías: 
+- **Front-end:** HTML5, CSS3, JavaScript. Complements: W3.css
+
+- **Deployed** en Firebase 
+
+- **Link:** https://herencia-genetica.firebaseapp.com
 
