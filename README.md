@@ -12,8 +12,9 @@
 - **Front-end:** 
   - HTML5
   - CSS3
-  - JavaScript. 
-  - Complements: W3.css
+  - JavaScript 
+  - _Complements:_ 
+    - W3.css
 
 - **Deployed** en Firebase 
 
