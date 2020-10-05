@@ -8,7 +8,7 @@
 - It is recommended to use it in a mobile rather than a desktop screen.
 - The app is in Spanish.
 
-### :computer: Tecnologías: 
+### :computer: Tecnologías utilizadas: 
 - **Front-end:** 
   - HTML5
   - CSS3
