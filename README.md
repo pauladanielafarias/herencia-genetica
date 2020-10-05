@@ -16,7 +16,7 @@
   - _Complements:_ 
     - W3.css
 
-- **Deployed** en Firebase 
+- **Deployed** on Firebase 
 
 - **Link:** [Herencia Genética](https://herencia-genetica.firebaseapp.com)
 
