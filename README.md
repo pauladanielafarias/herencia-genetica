@@ -5,8 +5,8 @@
 - La app está en Español.
 
 #### Responsive Web App to determine the probability that your child has light or dark eyes. 
-- It is recommended to use it in a mobile rather than a desktop screen
-- The app is in Spanish
+- It is recommended to use it in a mobile rather than a desktop screen.
+- The app is in Spanish.
 
 ### :computer: Tecnologías: 
 - **Front-end:** 
